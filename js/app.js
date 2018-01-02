@@ -23,7 +23,7 @@ $(document).ready(function () {
   addFilters($("#filter"));
 
   setTimeout(function () {
-    $("#loader").fadeOut();
+    $("#splash").fadeOut();
     $("#main-container").fadeIn();
   }, 1000);
   setTimeout(function () {
@@ -43,7 +43,7 @@ $(document).ready(function () {
       }
     };
 
-    /* Mouseover effect*/
+    /* Mouseover efectot*/
     $(".container-img-p").mouseover(function () {
       $(":nth-child(1)", this).css({
         "opacity": "1"
@@ -56,15 +56,7 @@ $(document).ready(function () {
       });
     });
 
-    /* Determining the content of the modal*/
-    $(".container-img-p").click(function () {
-      var place = $(this).children("img").attr("alt");
-      for (var i = 0; i < restaurants.length; i++) {
-        if (place == restaurants[i].name) {
-          console.log(restaurants[i].name);
-        }
-      }
-    });
+   
 
   });
 });
